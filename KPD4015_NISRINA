@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistem Pam Minyak Digital</title>
+    <style>
+        body { 
+            font-family: Arial; 
+            margin: 40px; 
+            background-color: #f5f5f5; 
+        }
+        h2 { 
+            color: #0047ab; 
+        }
+        form { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            width: 400px; 
+        }
+        .resit { 
+            background: #e0f0ff; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>📟 Sistem Pam Minyak Digital</h2>
+
+    <form method="post">
+        <label>Nama Pelanggan:</label><br>
+        <input type="text" name="nama" required><br><br>
+
+        <label>Pilih Jenis Minyak:</label><br>
+        <select name="jenis">
+            <option value="RON95">RON95</option>
+            <option value="RON97">RON97</option>
+            <option value="Diesel">Diesel</option>
+        </select><br><br>
+
+        <label>Jumlah Liter:</label><br>
+        <input type="number" name="liter" step="0.01" required><br><br>
+
+        <label>Kaedah Bayaran:</label><br>
+        <input type="radio" name="bayaran" value="Tunai" checked> Tunai
+        <input type="radio" name="bayaran" value="Kad Kredit"> Kad Kredit
+        <input type="radio" name="bayaran" value="eWallet"> eWallet<br><br>
+
+        <input type="submit" value="Cetak Resit">
+    </form>
